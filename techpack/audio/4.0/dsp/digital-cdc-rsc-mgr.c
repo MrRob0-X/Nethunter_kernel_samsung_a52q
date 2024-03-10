@@ -93,7 +93,7 @@ void digital_cdc_rsc_mgr_init(void)
 	is_init_done = true;
 }
 
-void digital_cdc_rsc_mgr_exit()
+void digital_cdc_rsc_mgr_exit(void)
 {
 	mutex_destroy(&hw_vote_lock);
 	is_init_done = false;
